@@ -30,8 +30,13 @@ A fully automated stock trading bot built using the Upstox API. It implements te
 
 ## 📦 Installation & Setup
 ```bash
-git clone https://github.com/yourusername/algo-trader-upstox
-cd algo-trader-upstox
+git clone https://github.com/durgeshmca/TradingBot.git
+cd TradingBot
 pip install -r requirements.txt
-python scripts/login_upstox.py  # setup token
-python live_trading/trader.py
+rename .env_example .env
+# update keys in env file
+uvicorn app:app --reload  # setup token
+python ma_crossover_bot.py # run bot
+
+```
+### More details will be added soon
